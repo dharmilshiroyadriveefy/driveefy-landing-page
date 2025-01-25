@@ -1,0 +1,47 @@
+.pillar-card-container{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: auto;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    margin-top: 3.5rem;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    div{
+        padding: 0.5rem 0;
+    }
+
+    .pillar-card-icon{
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 75px;
+            height: 75px;
+        }    
+    }
+
+    .pillar-card-title{
+        text-align: center;
+        font-family: "plus jakarta sans";
+        font-size: 1.5rem;
+        color: #000000;
+        font-weight: 600;
+    }
+    .pillar-card-description{
+        font-size: 1rem;
+        text-align: center;
+        font-family: "plus jakarta sans";
+        color:#676161;
+    }
+}

@@ -1,0 +1,15 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+/* .main-container{
+  background: linear-gradient(to top, white, #d2dbfe);
+  
+} */
+.nav-container{
+  background-color: #d2dbfe;
+}
+

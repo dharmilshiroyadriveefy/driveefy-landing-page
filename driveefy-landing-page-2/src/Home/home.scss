@@ -1,0 +1,183 @@
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.home-main-container{
+    width: 100%;
+    height: 100%;
+   
+    
+    .home-main-content{
+        padding-bottom: 3rem;
+        text-align: center;
+        animation: slideInFromBottom 1s ease-in-out;
+        background: linear-gradient(to top, white, #d2dbfe);
+
+        p{
+            padding-top: 0.5rem;
+        }
+
+        .home-main-title{
+            font-size: 1rem;
+            font-family: "Plus Jakarta Sans";
+            color:#817A7A;
+        }
+        .home-main-subtitle{
+            font-size: 2rem;
+            font-family: "Plus Jakarta Sans";
+            color:#000000;
+        }
+
+        .home-main-tagline{
+            font-size: 2.5rem;
+            font-family: "Plus Jakarta Sans";
+            color:#263B94;
+        }
+
+        .home-main-description{
+            font-size: 1.2rem;
+            font-family: "Plus Jakarta Sans";
+            color:#817A7A;
+        }
+
+        .home-main-button{
+            margin-top: 1.5rem;
+            background-color: #292A6A;
+            border-radius: 1.75rem;
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            font-size:1.2rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;  /* Specify the properties explicitly */
+            &:hover {
+                background-color: #1a2a6c; /* Hover color */
+                transform: scale(1.05);    /* Hover transform */
+            }
+        
+            span{
+                font-weight: 600;
+            }  
+        }
+
+        .home-main-image{
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            width: 100%;
+
+            img{
+                width: 1225px;
+                height: 600px;
+            }
+        }
+    }
+
+    .core-pillar-container{
+        width: 100%;
+        padding: 5rem 0rem 5rem 0rem;
+        transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+        text-align: center;
+        
+
+        &.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .core-pillar-title{
+            font-size: 2.5rem;
+            font-family: "Plus Jakarta Sans";
+            color:#000000;
+            
+            span {
+                font-family: "Plus Jakarta Sans";
+                font-weight: 600;
+                color:#263B94;
+            }   
+        }
+        .core-pillar-description{
+            font-size: 1.2rem;
+            font-family: "Plus Jakarta Sans";
+            color:#817A7A;
+        }
+
+        .core-pillar-cards-container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            padding-left:6.5rem; 
+            justify-content: center;
+        }
+    }
+
+    .business-expansion-container {
+        width: 100%;
+        padding: 5rem 13rem;
+        text-align: center;
+        background-color: #F5F8FF;
+    
+        .business-expansion-title {
+            font-size: 2.5rem;
+            font-family: "Plus Jakarta Sans";
+            color: #263B94;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+    
+        .business-expansion-description {
+            font-size: 0.95rem;
+            font-family: "Plus Jakarta Sans";
+            color: #817A7A;
+        }
+        
+        .business-expansion-tab-container{
+            width: 100%;
+            padding: None !important;
+        }
+    }
+    .transform-operation-container{
+        width: 100%;
+        padding: 5rem 13rem;
+        text-align: center;
+
+        .transform-operation-title{
+            font-size: 2.5rem;
+            font-family: "Plus Jakarta Sans";
+            color: #263B94;
+            font-weight: 600;
+        }
+        .transform-operation-description{
+            font-size: 1.2rem;
+            font-family: "Plus Jakarta Sans";
+            color: #817A7A;
+        }
+        .transform-operation-button{
+            margin-top: 1.5rem;
+            background-color: #292A6A;
+            border-radius: 1.75rem;
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            font-size:1.2rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;  /* Specify the properties explicitly */
+            &:hover {
+                background-color: #1a2a6c; /* Hover color */
+                transform: scale(1.05);    /* Hover transform */
+            }
+        
+            span{
+                font-weight: 600;
+            }  
+        }
+
+    }
+}
